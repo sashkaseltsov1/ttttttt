@@ -1,0 +1,32 @@
+@import "../../../assets/mixins";
+.mini-anonce{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 16px;
+  margin-bottom: 32px;
+  @include tablets{
+    grid-gap: 12px;
+  }
+  @include phones{
+    grid-gap: 16px;
+  }
+}
+.mini-anonce__img{
+  display: flex;
+  margin: auto;
+
+}
+.mini-anonce__img>img{
+  max-width: 100%;
+  height: auto;
+}
+.mini-anonce__description{
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  margin: auto;
+  text-align: left;
+}
